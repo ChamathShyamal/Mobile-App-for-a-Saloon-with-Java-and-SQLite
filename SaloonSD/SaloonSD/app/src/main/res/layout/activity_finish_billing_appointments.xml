@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/wall2"
+    tools:context=".finishBillingAppointments">
+
+    <TextView
+        android:id="@+id/textView23"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="49dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="52dp"
+        android:layout_marginBottom="30dp"
+        android:text="FINISH APPOINTMENT WITH THE BILL AMOUNT"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/textView26"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView24"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="54dp"
+        android:layout_marginEnd="56dp"
+        android:layout_marginBottom="40dp"
+        android:text="Customer Name"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/textView25"
+        app:layout_constraintEnd_toStartOf="@+id/txtCustomerBillName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView26" />
+
+    <TextView
+        android:id="@+id/textView25"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="52dp"
+        android:layout_marginEnd="27dp"
+        android:layout_marginBottom="40dp"
+        android:text="Customer Telephone "
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/textView27"
+        app:layout_constraintEnd_toStartOf="@+id/txtCustomerBillTelephone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView24" />
+
+    <TextView
+        android:id="@+id/textView26"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="54dp"
+        android:layout_marginEnd="79dp"
+        android:layout_marginBottom="40dp"
+        android:text="Admin Name"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/textView24"
+        app:layout_constraintEnd_toStartOf="@+id/txtAdminName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView23" />
+
+    <TextView
+        android:id="@+id/textView27"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="1dp"
+        android:layout_marginBottom="20dp"
+        android:text="Total Bill Amount"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/btnTransactionDate"
+        app:layout_constraintStart_toStartOf="@+id/textView25"
+        app:layout_constraintTop_toBottomOf="@+id/textView25" />
+
+    <Button
+        android:id="@+id/btnFinishAppointment"
+        android:layout_width="147dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginBottom="40dp"
+        android:onClick="onBtnFinishAppointment"
+        android:text="Finish Appointment"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/txtTransactionDate"
+        app:layout_constraintStart_toEndOf="@+id/btnTransactionTime"
+        app:layout_constraintTop_toBottomOf="@+id/txtTransactionTime" />
+
+    <EditText
+        android:id="@+id/txtAdminName"
+        android:layout_width="178dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="17dp"
+        android:layout_marginBottom="1dp"
+        android:background="@color/white"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Admin"
+        app:layout_constraintBottom_toTopOf="@+id/txtCustomerBillName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView26"
+        app:layout_constraintTop_toBottomOf="@+id/textView23" />
+
+    <EditText
+        android:id="@+id/txtCustomerBillName"
+        android:layout_width="178dp"
+        android:layout_height="39dp"
+        android:layout_marginEnd="17dp"
+        android:layout_marginBottom="0.5dp"
+        android:background="@color/white"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/txtCustomerBillTelephone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView24"
+        app:layout_constraintTop_toBottomOf="@+id/txtAdminName" />
+
+    <Spinner
+        android:id="@+id/spinnerBillTotal"
+        android:layout_width="178dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="17dp"
+        android:layout_marginEnd="18dp"
+        android:layout_marginBottom="1dp"
+        android:background="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/txtTransactionDate"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btnTransactionDate"
+        app:layout_constraintTop_toBottomOf="@+id/txtCustomerBillTelephone" />
+
+    <EditText
+        android:id="@+id/txtTransactionDate"
+        android:layout_width="148dp"
+        android:layout_height="39dp"
+        android:layout_marginEnd="17dp"
+        android:layout_marginBottom="5dp"
+        android:background="@color/white"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:drawableStart="@drawable/ic_baseline_date_range_24"
+        android:drawableLeft="@drawable/ic_baseline_date_range_24"
+        app:layout_constraintBottom_toTopOf="@+id/txtTransactionTime"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btnTransactionDate"
+        app:layout_constraintTop_toBottomOf="@+id/spinnerBillTotal" />
+
+    <EditText
+        android:id="@+id/txtTransactionTime"
+        android:layout_width="145dp"
+        android:layout_height="36dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginStart="18dp"
+        android:layout_marginEnd="1dp"
+        android:background="@color/white"
+        android:drawableStart="@drawable/ic_baseline_access_time_24"
+        android:drawableLeft="@drawable/ic_baseline_access_time_24"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/btnFinishAppointment"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btnTransactionTime"
+        app:layout_constraintTop_toBottomOf="@+id/txtTransactionDate" />
+
+    <Button
+        android:id="@+id/btnTransactionDate"
+        android:layout_width="0dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginEnd="38dp"
+        android:layout_marginBottom="1dp"
+        android:text="Transaction Date"
+        app:layout_constraintBottom_toTopOf="@+id/btnTransactionTime"
+        app:layout_constraintEnd_toStartOf="@+id/txtTransactionDate"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView27" />
+
+    <Button
+        android:id="@+id/btnTransactionTime"
+        android:layout_width="156dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="33dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="135dp"
+        android:text="Transaction Time"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/txtTransactionTime"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnTransactionDate" />
+
+    <EditText
+        android:id="@+id/txtCustomerBillTelephone"
+        android:layout_width="177dp"
+        android:layout_height="39dp"
+        android:layout_marginEnd="18dp"
+        android:layout_marginBottom="1dp"
+        android:background="@color/white"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintBottom_toTopOf="@+id/spinnerBillTotal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView25"
+        app:layout_constraintTop_toBottomOf="@+id/txtCustomerBillName" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

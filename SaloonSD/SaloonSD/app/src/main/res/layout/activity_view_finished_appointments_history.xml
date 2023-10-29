@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/transactionTable"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/royal_blue"
+    tools:context=".viewFinishedAppointmentsHistory">
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/zaffre">
+
+        <TextView
+            android:id="@+id/billAdminName"
+            android:layout_width="12dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".1"
+            android:padding="7sp"
+            android:text="Admin Name"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/billCustomerName"
+            android:layout_width="27dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".1"
+            android:padding="8sp"
+            android:text="Customer Name"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/billCustomerTel"
+            android:layout_width="31dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".1"
+            android:padding="8sp"
+            android:text="Telephone"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/billTotal"
+            android:layout_width="5dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".1"
+            android:padding="8sp"
+            android:text="Total"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/billDate"
+            android:layout_width="5dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".1"
+            android:padding="8sp"
+            android:text="Date"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/billTime"
+            android:layout_width="1dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".1"
+            android:padding="8sp"
+            android:text="Time"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+    </TableRow>
+
+</TableLayout>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.salonsd">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.SalonSD">
+        <activity
+            android:name=".viewFinishedAppointmentsHistory"
+            android:exported="true" />
+        <activity
+            android:name=".finishBillingAppointments"
+            android:exported="true" />
+        <activity
+            android:name=".adminAppointment"
+            android:exported="true" />
+        <activity
+            android:name=".viewAppointment"
+            android:exported="true" />
+        <activity
+            android:name=".adminMenu"
+            android:exported="true" />
+        <activity
+            android:name=".customerLogin"
+            android:exported="true" />
+        <activity
+            android:name=".adminLogin"
+            android:exported="true" />
+        <activity
+            android:name=".customerRegister"
+            android:exported="true" />
+        <activity
+            android:name=".adminRegister"
+            android:exported="true" />
+        <activity
+            android:name=".customerAppointment"
+            android:exported="true" />
+        <activity
+            android:name=".veryFirstHomeActivity"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.SalonSD">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
